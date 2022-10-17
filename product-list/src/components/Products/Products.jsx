@@ -8,7 +8,7 @@ const Products = () => {
 	return (
 		<div className="d-flex flex-wrap gap-3 ">
 			{products.map((products, index) => (
-				<Card className="shadow" style={{ width: "20rem" }} key={index}>
+				<Card className="shadow" style={{ width: "22rem" }} key={index}>
 					<Card.Img variant="top" src={products.images} />
 					<Card.Body>
 						<Card.Title>{products.title}</Card.Title>
