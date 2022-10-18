@@ -4,15 +4,15 @@ import products from "../../helper/data";
 
 
 
-const Products = () => {
+const Products = ({images,title,price}) => {
 	return (
 		<div className="d-flex flex-wrap gap-3 ">
 			{products.map((products, index) => (
 				<Card className="shadow" style={{ width: "22rem" }} key={index}>
-					<Card.Img variant="top" src={products.images} />
+					<Card.Img variant="top" src={images} />
 					<Card.Body>
-						<Card.Title>{products.title}</Card.Title>
-						<Card.Subtitle>{products.price}</Card.Subtitle>
+						<Card.Title>{title}</Card.Title>
+						<Card.Subtitle>${price}</Card.Subtitle>
 					</Card.Body>
 				</Card>
 			))}
